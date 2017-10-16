@@ -2,6 +2,7 @@
 def valid_move?(board, index)
   board[index] != " " || board[index] != ""
   index >= 8 || index <= 0
+  board[index] == position_taken
 end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
