@@ -1,6 +1,6 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
-  board[index] == X || board[index] == O
+  board[index] != " " || board[index] == ""
   index >= 8 || index <= 0 
 end
 
